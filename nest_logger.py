@@ -58,7 +58,7 @@ def datalog(napi, logger, debug=False):
             log_message += ",{:0.1f}".format(structure.weather.current.humidity)
             log_message += ",{}".format(structure.weather.current.wind.direction)
             log_message += ",{:0.1f}".format(structure.weather.current.wind.azimuth)
-            log_message += ",{:0.1f}".format(structure.weather.current.wind.kph)
+            #log_message += ",{:0.1f}".format(structure.weather.current.wind.kph)
             logger.info(log_message)
     if debug:
         print(log_message)
